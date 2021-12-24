@@ -1,0 +1,58 @@
+
+
+.navbar-brand img{
+    height: 75px;
+}
+.jumbotron {
+    background-image: url(images/Billlie.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: 0;
+    border-radius: 0;
+    padding-right: 0;
+}
+
+.jumbotron h1 {
+    color: crimson;
+    text-shadow: 0 0 5px #222;
+}
+
+.jumbotron p{
+    color: rgb(203, 104, 223);
+    font-size: 20px;
+}
+
+.nav-link{
+    color: rgb(160, 73, 221) !important;
+    font-size: large;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.n-left {
+    height: 500px;
+    background-color: orange;
+}
+.n-left p{
+    color: black;
+    padding: 10px;
+    text-align: justify;
+}
+h3 {
+    font-style: italic;
+}
+.n-right {
+    height: 500px;
+    background-color: orangered;
+}
+.n-right img{
+    width: 80%;
+    text-align: center;
+}
