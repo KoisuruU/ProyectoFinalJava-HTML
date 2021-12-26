@@ -15,7 +15,7 @@ body {background-color: black;}
 
 
 .jumbotron {
-    background-image: url(/images/Untitled.png);
+    background-image: url(../images/Untitled.png);
     background-size: cover;
     background-position:top;
     background-repeat: no-repeat;
@@ -54,12 +54,13 @@ h2 {
 
 .n-left {
     height: 400px;
+    padding: 20px;
     background-color: rgb(197,180,227);
 }
 
 .n-left p{
     color: black;
-    padding: 10px;
+    padding: 25px;
     text-align: justify;
 }
 
@@ -70,7 +71,7 @@ h3 {
 .n-right {
     height: 400px;    
     background-color:rgb(197,180,227);
-    background-image: url(/images/Billliex7.jpg);
+    background-image: url(../images/Billliex7.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
