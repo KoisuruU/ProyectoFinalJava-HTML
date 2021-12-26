@@ -1,16 +1,27 @@
-
+body {background-color: black;}
+.navbar {
+    padding: 0;
+    }
 
 .navbar-brand img{
     height: 75px;
+    margin-left: 5px;
 }
+.navbar-toggler {
+    background-color: rgb(95, 148, 228);
+}
+
+
+
+
 .jumbotron {
-    background-image: url(images/Billlie.png);
+    background-image: url(/images/Untitled.png);
     background-size: cover;
-    background-position: center;
+    background-position:top;
+    background-repeat: no-repeat;
     height: 400px;
     margin: 0;
     border-radius: 0;
-    padding-right: 0;
 }
 
 .jumbotron h1 {
@@ -19,40 +30,73 @@
 }
 
 .jumbotron p{
-    color: rgb(203, 104, 223);
-    font-size: 20px;
+    color: rgb(247, 111, 0);
+    font-size: 22px;
+    font-style: bold;
 }
 
 .nav-link{
-    color: rgb(160, 73, 221) !important;
-    font-size: large;
-}
+    color: black !important;
+    font-size: x-large;
+}   
 
 h2 {
-    color: white;
+    color: black;
     text-align: center;
     text-transform: capitalize;
     padding: 10px;
+    margin-bottom: 1px;
+    margin-top: 1px;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
 }
 
+
 .n-left {
-    height: 500px;
-    background-color: orange;
+    height: 400px;
+    background-color: rgb(197,180,227);
 }
+
 .n-left p{
     color: black;
     padding: 10px;
     text-align: justify;
 }
+
 h3 {
     font-style: italic;
 }
+
 .n-right {
-    height: 500px;
-    background-color: orangered;
+    height: 400px;    
+    background-color:rgb(197,180,227);
+    background-image: url(/images/Billliex7.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.n-right img{
-    width: 80%;
+s
+.col-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.debutmv {
+    width: 100%;
     text-align: center;
+    align-self: center;
+    padding-left: 0px;
+    padding-right: 0px;
 }
+.debutmvhijo {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+
+
