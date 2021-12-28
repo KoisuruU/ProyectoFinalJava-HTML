@@ -1,8 +1,8 @@
+/* BODY Y NAVBAR Y FOOTER TODOS */
 body {background-color: black;}
 .navbar {
     padding: 0;
     }
-
 .navbar-brand img{
     height: 75px;
     margin-left: 5px;
@@ -10,10 +10,15 @@ body {background-color: black;}
 .navbar-toggler {
     background-color: rgb(95, 148, 228);
 }
+.nav-item:hover {
+    background-color:rgba(133, 115, 177, 0.2)
+}
+footer {
+    color: red;
+}
+/* BODY Y NAVBAR Y FOOTER TODOS */
 
-
-
-
+/* INDEX START */
 .jumbotron {
     background-image: url(../images/Untitled.png);
     background-size: cover;
@@ -27,10 +32,13 @@ body {background-color: black;}
 .jumbotron h1 {
     color: crimson;
     text-shadow: 0 0 5px #222;
+    font-weight: bold;
 }
 
 .jumbotron p{
-    color: rgb(247, 111, 0);
+    color: rgb(247, 0, 0);
+    text-shadow: 0 0 5px #222;
+    font-weight: bold;
     font-size: 22px;
     font-style: bold;
 }
@@ -40,6 +48,7 @@ body {background-color: black;}
     font-size: x-large;
 }   
 
+/* Aplica para todos los H2 */
 h2 {
     color: black;
     text-align: center;
@@ -50,7 +59,7 @@ h2 {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
 }
-
+/* Aplica para todos los H2 */
 
 .n-left {
     height: 400px;
@@ -92,6 +101,7 @@ s
     display: inline-block;
     margin: 0 auto;
     padding: 5px;
+    height: 100%;
 }
 
 .row {
@@ -99,5 +109,31 @@ s
     padding: 0;
 }
 
+/* INDEX END */
 
+/* Members Start */
+.card-body {
+    background-color:rgb(197,180,227) ;
+}
+
+.row-members {
+    margin-top: 1px;
+}
+
+.card-img-top:hover {
+    filter: drop-shadow(0 0 0.75rem crimson) saturate(1.6);
+    transform: scale(1.01);
+}
+
+.row.row-cols-1.row-cols-md-2 {
+    padding-top: 15px;
+}
+
+.card-title {
+    text-shadow: 0 0 1px rgb(0, 0, 0);
+}
+.card-text {
+    font-size: large;
+}
+/* Members End */
 
