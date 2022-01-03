@@ -20,9 +20,9 @@ footer {
 
 /* INDEX START */
 .jumbotron {
-    background-image: url(../images/Untitled.png);
+    background-image: url(../images/fondonombres.jpg);
     background-size: cover;
-    background-position:top;
+    background-position:bottom;
     background-repeat: no-repeat;
     height: 400px;
     margin: 0;
