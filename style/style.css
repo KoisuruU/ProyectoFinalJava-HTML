@@ -153,7 +153,11 @@ s
 
 /* Members End */
 .twitterembed {
-  margin-top: 1px;
+  margin-top: 2px;
+}
+
+.twitterembedhijo {
+  margin: 0px auto;
 }
 
 .n-left-videos {
