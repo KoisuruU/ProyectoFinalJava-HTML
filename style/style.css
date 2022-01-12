@@ -94,13 +94,13 @@ h3 {
   background-repeat: no-repeat;
 }
 
-s
-.col-12 {
+s .col-12 {
   padding-right: 0px;
   padding-left: 0px;
 }
 
-.debutmv {
+/* Mixin Desafio */
+.debutmv, .maplocation {
   width: 100%;
   text-align: center;
   -ms-flex-item-align: center;
@@ -110,13 +110,14 @@ s
   padding-right: 0px;
 }
 
-.debutmvhijo {
+.debutmvhijo, .maplocationhijo {
   display: inline-block;
   margin: 0 auto;
   padding: 5px;
   height: 100%;
 }
 
+/* Mixin Desafio */
 .row {
   margin: 0;
   padding: 0;
@@ -124,10 +125,6 @@ s
 
 /* INDEX END */
 /* Members Start */
-.card-body {
-  background-color: #c5b4e3;
-}
-
 .row-members {
   margin-top: 1px;
 }
@@ -208,20 +205,36 @@ form {
       align-self: center;
 }
 
-.maplocation {
-  width: 100%;
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding-left: 0px;
-  padding-right: 0px;
+/* Extend Desafio */
+/* Extend Desafio */
+/* Maps Desafio */
+.card-body--m1 {
+  background-color: rgba(148, 0, 148, 0.712);
 }
 
-.maplocationhijo {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 5px;
-  height: 100%;
+.card-body--m2 {
+  background-color: green;
 }
+
+.card-body--m3 {
+  background-color: pink;
+}
+
+.card-body--m4 {
+  background-color: red;
+}
+
+.card-body--m5 {
+  background-color: orange;
+}
+
+.card-body--m6 {
+  background-color: yellow;
+}
+
+.card-body--m7 {
+  background-color: #00ccff;
+}
+
+/* Maps Desafio */
 /*# sourceMappingURL=style.css.map */

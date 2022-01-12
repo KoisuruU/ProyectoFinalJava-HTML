@@ -97,19 +97,29 @@ s
     padding-right: 0px;
     padding-left: 0px;
 }
+// Use debutmv y debutmvhijo para un extend mas abajo
+/* Mixin Desafio */
+@mixin centerdad($width, $textalign, $alignself) {
+    width: $width;
+    text-align: $textalign;
+    align-self: $alignself;
+}
 .debutmv {
-    width: 100%;
-    text-align: center;
-    align-self: center;
+    @include centerdad(100%, center, center);
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 0px;    
+}
+@mixin centerson($display, $margin, $padding) {
+    display: $display;
+    margin: $margin;
+    padding: $padding;
 }
 .debutmvhijo {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 5px;
+    @include centerson(inline-block,0 auto, 5px);
     height: 100%;
 }
+/* Mixin Desafio */
+// Use debutmv y debutmvhijo para un extend mas abajo
 
 .row {
     margin: 0;
@@ -119,10 +129,6 @@ s
 /* INDEX END */
 
 /* Members Start */
-.card-body {
-    background-color: $color2 ;
-}
-
 .row-members {
     margin-top: 1px;
 }
@@ -185,19 +191,34 @@ form {
     text-align: center;
     align-self: center;
 }
+
+/* Extend Desafio */
 .maplocation {
-    width: 100%;
-    text-align: center;
-    align-self: center;
-    padding-left: 0px;
-    padding-right: 0px;
+    @extend .debutmv;
 }
 .maplocationhijo {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 5px;
-    height: 100%;
+    @extend .debutmvhijo;
 }
+/* Extend Desafio */
+/* Maps Desafio */
+$cards: (
+    m1: rgba(148, 0, 148, 0.712),
+    m2: green,
+    m3: pink,
+    m4: red,
+    m5: orange,
+    m6: yellow,
+    m7: #00ccff
+    );
+    
+    @each $m, $color in $cards {
+        .card-body--#{$m} {
+            background-color: $color;
+        }
+    }
+/* Maps Desafio */
+
+
 
 
 
