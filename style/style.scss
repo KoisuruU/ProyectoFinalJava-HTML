@@ -5,7 +5,13 @@ $color3: crimson;
 $color4: black;
 // SASS DATOS 
 /* BODY Y NAVBAR Y FOOTER TODOS */
-body {background-color: black;}
+body{
+    background-image: url(../images/BilllieBG.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
 .navbar {
     padding: 0;
     }
@@ -61,8 +67,8 @@ h2 {
     text-align: center;
     text-transform: capitalize;
     padding: 10px;
-    margin-bottom: 1px;
     margin-top: 1px;
+    margin-bottom: 1px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
 }
@@ -148,6 +154,10 @@ s
 .card-text {
     font-size: large;
 }
+#carouselExampleIndicators {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 /* Members End */
 
 .twitterembed {
@@ -174,6 +184,12 @@ s
 .infovideos:hover {
     filter: drop-shadow(0 0 0.75rem $color1);
     font-weight: bold;
+}
+
+.ssnlogos {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #contactbody {
