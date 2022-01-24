@@ -154,6 +154,7 @@ s
 .card-text {
     font-size: large;
 }
+
 #carouselExampleIndicators {
     margin-left: 20px;
     margin-right: 20px;
@@ -207,6 +208,11 @@ form {
     text-align: center;
     align-self: center;
 }
+.form-group.col-xs-12.col-md-6 {
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Extend Desafio */
 .maplocation {
@@ -224,7 +230,8 @@ $cards: (
     m4: red,
     m5: orange,
     m6: yellow,
-    m7: #00ccff
+    m7: #00ccff,
+    m8: white,
     );
     
     @each $m, $color in $cards {
