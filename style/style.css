@@ -75,7 +75,7 @@ h2 {
 .n-left-index {
   height: 400px;
   padding: 20px;
-  background-color: #c5b4e3;
+  background-color: rgba(197, 180, 227, 0.75);
 }
 
 .n-left-index p {
@@ -90,7 +90,7 @@ h3 {
 
 .n-right-index {
   height: 400px;
-  background-color: #c5b4e3;
+  background-color: rgba(197, 180, 227, 0.75);
   background-image: url(../images/Billliex7.jpg);
   background-position: center;
   background-size: contain;
@@ -139,8 +139,13 @@ s .col-12 {
   padding-top: 15px;
 }
 
+.card-img-top {
+  border-radius: 20px;
+}
+
 .card {
-  background-color: #c5b4e3;
+  background-color: transparent;
+  border: 0px;
 }
 
 .card-title {
@@ -149,6 +154,7 @@ s .col-12 {
 
 .card-text {
   font-size: large;
+  padding: 5px;
 }
 
 #carouselExampleIndicators {
@@ -180,7 +186,7 @@ s .col-12 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #c5b4e3;
+  background: rgba(197, 180, 227, 0.75);
   padding-top: 2px;
   padding-bottom: 2px;
   border-radius: 15px;
@@ -219,7 +225,7 @@ s .col-12 {
 }
 
 form {
-  background-color: #c5b4e3;
+  background-color: rgba(197, 180, 227, 0.75);
   text-align: center;
   align-self: center;
   margin-bottom: 5px;
@@ -264,6 +270,38 @@ form {
 
 .card-body--m8 {
   background-color: white;
+}
+
+.card-body--m1 {
+  border-radius: 25px;
+}
+
+.card-body--m2 {
+  border-radius: 25px;
+}
+
+.card-body--m3 {
+  border-radius: 25px;
+}
+
+.card-body--m4 {
+  border-radius: 25px;
+}
+
+.card-body--m5 {
+  border-radius: 25px;
+}
+
+.card-body--m6 {
+  border-radius: 25px;
+}
+
+.card-body--m7 {
+  border-radius: 25px;
+}
+
+.card-body--m8 {
+  border-radius: 25px;
 }
 
 /* Maps Desafio *//*# sourceMappingURL=style.css.map */

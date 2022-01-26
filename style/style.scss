@@ -1,6 +1,6 @@
 // SASS DATOS 
 $color1: aqua;
-$color2: rgb(197,180,227);
+$color2: rgb(197,180,227, 0.75);
 $color3: crimson;
 $color4: black;
 // SASS DATOS 
@@ -147,15 +147,22 @@ s
 .row.row-cols-1.row-cols-md-2 {
     padding-top: 15px;
 }
-.card {
-    background-color: $color2;
+.card-img-top {
+    border-radius: 20px;
 }
+.card {
+    background-color: transparent;
+    border: 0px;
+}
+
 .card-title {
     text-shadow: 0 0 1px rgb(0, 0, 0);
 }
 .card-text {
     font-size: large;
+    padding: 5px;
 }
+
 
 #carouselExampleIndicators {
     margin-left: 25px;
@@ -247,6 +254,23 @@ $cards: (
     @each $m, $color in $cards {
         .card-body--#{$m} {
             background-color: $color;
+        }
+    }
+
+$cards2: (
+    m1: 25px,
+    m2: 25px,
+    m3: 25px,
+    m4: 25px,
+    m5: 25px,
+    m6: 25px,
+    m7: 25px,
+    m8: 25px,
+    );
+        
+    @each $m, $borderradius in $cards2 {
+        .card-body--#{$m} {
+            border-radius: $borderradius;
         }
     }
 /* Maps Desafio */
