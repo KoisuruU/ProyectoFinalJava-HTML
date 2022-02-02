@@ -155,8 +155,8 @@ h3 {
   }
 
   .col.mb-4 {
-    margin-bottom: -1rem !important;
-    margin-top: -1rem !important;
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
   }
 }
 .card {
