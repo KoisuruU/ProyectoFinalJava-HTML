@@ -47,7 +47,7 @@ footer {
 }
 
 .jumbotron p {
-  color: #f70000;
+  color: #c5b4e3;
   text-shadow: 0 0 5px #222;
   font-weight: bold;
   font-size: 22px;
@@ -75,7 +75,7 @@ h2 {
 .n-left-index {
   height: 400px;
   padding: 20px;
-  background-color: rgba(197, 180, 227, 0.75);
+  background-color: rgba(197, 180, 227, 0.65);
 }
 
 .n-left-index p {
@@ -90,14 +90,14 @@ h3 {
 
 .n-right-index {
   height: 400px;
-  background-color: rgba(197, 180, 227, 0.75);
+  background-color: rgba(197, 180, 227, 0.65);
   background-image: url(../images/Billliex7.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-s .col-12 {
+.col-12 {
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -111,11 +111,15 @@ s .col-12 {
   padding-right: 0px;
 }
 
-.debutmvhijo, .maplocationhijo {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 5px;
+.debutmvhijo {
   height: 100%;
+  width: 88%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  padding: 5px;
 }
 
 /* Mixin Desafio */
@@ -135,14 +139,26 @@ s .col-12 {
   transform: scale(1.01);
 }
 
-.row.row-cols-1.row-cols-md-2 {
-  padding-top: 15px;
-}
-
 .card-img-top {
   border-radius: 20px;
+  height: 90%;
+  width: 70%;
+  margin: 0px auto;
+  margin-bottom: 1px;
 }
 
+@media only screen and (max-width: 767px) {
+  .card-img-top {
+    width: 90%;
+    height: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .col.mb-4 {
+    margin-bottom: -1rem !important;
+    margin-top: -1rem !important;
+  }
+}
 .card {
   background-color: transparent;
   border: 0px;
@@ -158,8 +174,9 @@ s .col-12 {
 }
 
 #carouselExampleIndicators {
-  margin-left: 25px;
-  margin-right: 25px;
+  width: 90%;
+  height: 90%;
+  margin: 0px auto;
 }
 
 /* Members End */
@@ -186,12 +203,22 @@ s .col-12 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(197, 180, 227, 0.75);
-  padding-top: 2px;
+  background: rgba(197, 180, 227, 0.65);
+  padding-top: 0px;
   padding-bottom: 2px;
   border-radius: 15px;
+  margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 991px) {
+  .infovideos {
+    display: none;
+  }
+
+  .debutmvhijo {
+    width: 100%;
+  }
+}
 .infovideos h3 {
   padding: 2px;
 }
@@ -225,7 +252,7 @@ s .col-12 {
 }
 
 form {
-  background-color: rgba(197, 180, 227, 0.75);
+  background-color: rgba(197, 180, 227, 0.65);
   text-align: center;
   align-self: center;
   margin-bottom: 5px;
@@ -238,70 +265,132 @@ form {
 }
 
 /* Extend Desafio */
+.maplocationhijo {
+  display: inline-block;
+  margin: 1px auto;
+  padding: 5px;
+}
+
 /* Extend Desafio */
 /* Maps Desafio */
 .card-body--m1 {
-  background-color: #940094;
+  background-color: rgba(197, 180, 227, 0.65);
+  border-radius: 25px;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .card-body--m2 {
-  background-color: green;
+  background-color: rgba(197, 180, 227, 0.65);
+  border-radius: 25px;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .card-body--m3 {
-  background-color: pink;
+  background-color: rgba(197, 180, 227, 0.65);
+  border-radius: 25px;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .card-body--m4 {
-  background-color: red;
+  background-color: rgba(197, 180, 227, 0.65);
+  border-radius: 25px;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .card-body--m5 {
-  background-color: orange;
+  background-color: rgba(197, 180, 227, 0.65);
+  border-radius: 25px;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .card-body--m6 {
-  background-color: yellow;
+  background-color: rgba(197, 180, 227, 0.65);
+  border-radius: 25px;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .card-body--m7 {
-  background-color: #00ccff;
+  background-color: rgba(197, 180, 227, 0.65);
+  border-radius: 25px;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .card-body--m8 {
-  background-color: white;
+  background-color: rgba(197, 180, 227, 0.65);
+  border-radius: 25px;
+  width: 90%;
+  margin: 0px auto;
 }
 
-.card-body--m1 {
-  border-radius: 25px;
+.card-title--m1 {
+  color: purple;
 }
 
-.card-body--m2 {
-  border-radius: 25px;
+.card-title--m2 {
+  color: green;
 }
 
-.card-body--m3 {
-  border-radius: 25px;
+.card-title--m3 {
+  color: pink;
 }
 
-.card-body--m4 {
-  border-radius: 25px;
+.card-title--m4 {
+  color: red;
 }
 
-.card-body--m5 {
-  border-radius: 25px;
+.card-title--m5 {
+  color: orange;
 }
 
-.card-body--m6 {
-  border-radius: 25px;
+.card-title--m6 {
+  color: yellow;
 }
 
-.card-body--m7 {
-  border-radius: 25px;
+.card-title--m7 {
+  color: #00ccff;
 }
 
-.card-body--m8 {
-  border-radius: 25px;
+.card-title--m8 {
+  color: white;
+}
+
+.card-text--m1 {
+  color: purple;
+}
+
+.card-text--m2 {
+  color: green;
+}
+
+.card-text--m3 {
+  color: pink;
+}
+
+.card-text--m4 {
+  color: red;
+}
+
+.card-text--m5 {
+  color: orange;
+}
+
+.card-text--m6 {
+  color: yellow;
+}
+
+.card-text--m7 {
+  color: #00ccff;
+}
+
+.card-text--m8 {
+  color: white;
 }
 
 /* Maps Desafio *//*# sourceMappingURL=style.css.map */

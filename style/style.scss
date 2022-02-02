@@ -1,7 +1,7 @@
 // SASS DATOS 
 $color1: aqua;
-$color2: rgb(197,180,227, 0.75);
-$color3: crimson;
+$color2: rgb(197,180,227, 0.65);
+$color3: rgb(197,180,227);
 $color4: black;
 // SASS DATOS 
 /* BODY Y NAVBAR Y FOOTER TODOS */
@@ -49,7 +49,7 @@ footer {
 }
 
 .jumbotron p{
-    color: rgb(247, 0, 0);
+    color: $color3;
     text-shadow: 0 0 5px #222;
     font-weight: bold;
     font-size: 22px;
@@ -98,7 +98,7 @@ h3 {
     background-size: contain;
     background-repeat: no-repeat;
 }
-s
+
 .col-12 {
     padding-right: 0px;
     padding-left: 0px;
@@ -121,9 +121,13 @@ s
     padding: $padding;
 }
 .debutmvhijo {
-    @include centerson(inline-block,0 auto, 5px);
     height: 100%;
+    width: 88%;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: inline-block;
+    padding: 5px;
 }
+
 /* Mixin Desafio */
 // Use debutmv y debutmvhijo para un extend mas abajo
 
@@ -144,11 +148,23 @@ s
     transform: scale(1.01);
 }
 
-.row.row-cols-1.row-cols-md-2 {
-    padding-top: 15px;
-}
 .card-img-top {
     border-radius: 20px;
+    height: 90%;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 1px;
+}
+@media only screen and (max-width: 767px) {
+    .card-img-top {
+        width: 90%;
+        height: 100%;
+        margin-top: 0.5rem;
+    }
+    .col.mb-4 {
+        margin-bottom: -1rem!important;
+        margin-top: -1rem!important;
+    }
 }
 .card {
     background-color: transparent;
@@ -163,10 +179,10 @@ s
     padding: 5px;
 }
 
-
 #carouselExampleIndicators {
-    margin-left: 25px;
-    margin-right: 25px;
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
 }
 /* Members End */
 
@@ -182,16 +198,28 @@ s
     top: 0; right: 0; bottom: 0; left: 0;
     margin: auto;
 }
-.infovideos{
+
+.infovideos {
     position: relative;
     width: 80%;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     background: $color2;
-    padding-top: 2px;
+    padding-top: 0px;
     padding-bottom: 2px;
     border-radius: 15px;
+    margin-bottom: 5px;
 }
+@media only screen and (max-width: 991px) {
+    .infovideos {
+        display: none;
+    }
+    .debutmvhijo {
+        width: 100%;
+    }
+}
+
+
 .infovideos h3 {
     padding: 2px;
 }
@@ -236,12 +264,32 @@ form {
     @extend .debutmv;
 }
 .maplocationhijo {
-    @extend .debutmvhijo;
+    @include centerson(inline-block, 1px auto, 5px);
 }
 /* Extend Desafio */
 /* Maps Desafio */
 $cards: (
-    m1: rgba(148, 0, 148),
+    m1: $color2, 
+    m2: $color2, 
+    m3: $color2, 
+    m4: $color2, 
+    m5: $color2, 
+    m6: $color2, 
+    m7: $color2, 
+    m8: $color2, 
+    );
+    
+    @each $m, $color in $cards {
+        .card-body--#{$m} {
+            background-color: $color;
+            border-radius: 25px;
+            width: 90%;
+            margin: 0px auto;
+        }
+    }
+
+$cards3: (
+    m1: purple,
     m2: green,
     m3: pink,
     m4: red,
@@ -249,30 +297,19 @@ $cards: (
     m6: yellow,
     m7: #00ccff,
     m8: white,
-    );
-    
-    @each $m, $color in $cards {
-        .card-body--#{$m} {
-            background-color: $color;
+    );   
+    @each $m, $color in $cards3 {
+        .card-title--#{$m} {
+            color: $color;
+        }
+    }
+    @each $m, $color in $cards3 {
+        .card-text--#{$m} {
+            color: $color;
         }
     }
 
-$cards2: (
-    m1: 25px,
-    m2: 25px,
-    m3: 25px,
-    m4: 25px,
-    m5: 25px,
-    m6: 25px,
-    m7: 25px,
-    m8: 25px,
-    );
-        
-    @each $m, $borderradius in $cards2 {
-        .card-body--#{$m} {
-            border-radius: $borderradius;
-        }
-    }
+
 
 /* Maps Desafio */
 
