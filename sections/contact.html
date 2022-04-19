@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="../javascript/scriptGeneral.js"></script>
+    <script src="../javascript/librerias.js"></script>
     <!-- SEO -->
     <meta name="description" content="Our social networks, Newsletter form and a map with the location of Mystic Story's Company">
     <meta name="keyword" content="Billlie, Bias, Location, Mail, Form, Social Networks, SNS">
@@ -57,19 +58,19 @@
 <form>
     <div class="form-group col-xs-12 col-md-6">
       <label for="name">Name:</label>
-        <input type="text" class="form-control" placeholder="Tell us your name!" id="name">
+        <input type="text" class="form-control" placeholder="Tell us your name!" id="name" required>
     </div>
     <div class="form-group col-xs-12 col-md-6">
       <label for="email">Email:</label>
-        <input type="email" class="form-control" placeholder="Enter Email" id="email">
+        <input type="email" class="form-control" placeholder="Enter Email" id="email" required>
     </div>
     <div class="form-group col-xs-12 col-md-6">
       <label for="song">Favorite song!</label>
-        <input type="text" class="form-control" placeholder="Let us know your favorite song!" id="song">
+        <input type="text" class="form-control" placeholder="Let us know your favorite song!" id="song" required>
     </div>
     <div class="form-group col-xs-12 col-md-6">
       <label for="age">Let us know your age!</label>
-        <input type="text" class="form-control" placeholder="Let us know your age!" id="age">
+        <input type="text" class="form-control" placeholder="Let us know your age!" id="age" required>
     </div>
     <div class="form-group col-xs-12 col-md-6">
       <label for="members">Let us know your Bias!</label>
@@ -86,9 +87,9 @@
     </div>
     <div class="form-group col-xs-12 col-md-6">
       <label for="message">Message to the Creator: </label>
-      <textarea class="form-control textarea" id="message" rows="3" placeholder="Your message..."></textarea>
+      <textarea class="form-control textarea" id="message" rows="3" placeholder="Your message..." required></textarea>
     </div>
-    <div class="buttoncontact"><button onclick="sendmail()" type="button" class="btn btn-primary">Submit</button>
+    <div class="buttoncontact"><button onclick="sendmail()" type="button" class="btn btn-primary" id="formBtnSend">Submit</button>
     </div>
 </form>
   

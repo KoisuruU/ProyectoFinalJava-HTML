@@ -40,7 +40,24 @@ function sendmail() {
             userBias: bias,
             message: userMessage
         };
+            if (fullName === '') {
+                alert('Name is empty.');
+                return false;
+            }
+            else if (userEmail === '') {
+                alert('Last Name is empty.');
+                return false;
+            }
+            else if (userMessage === '') {
+                alert('Phone is empty.');
+                return false;
+            };
         emailjs.send('service_ld6gsx6', 'template_p5wzlzu', contactParams).then(function (res) {});
+        Swal.fire(
+            'Thank You!',
+            'Your message has been sent!',
+            'success'
+        );  
 }
 
 // <!-- Email --!>
